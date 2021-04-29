@@ -48,3 +48,29 @@
   - Security Secure Boot, Disabled(by default)
   - Boot, CSM, disabled
   - BIOS版本必须在4.0及以上！
+
+
+# 其他
+
+- 除了白果卡以及1820a（型号CN-OVW3T3）之外的wifi蓝牙卡若要驱动请自行搜索黑果小兵的博客。
+
+- 系统完成后睡眠修复, 打开终端执行:
+
+  ```bash
+  sudo pmset standby 0
+  sudo pmset autopoweroff 0
+  sudo pmset hibernatemode 0
+  sudo pmset proximitywake 0
+  ```
+> 或者使用 Hackintool 电源部分修复.
+
+- 系统偏好设置: 节能
+
+   - 取消勾选: 唤醒以供以太网络访问
+
+
+# 关于其他无线网卡
+- 如果使用白果拆机卡，直接使用`Deskmini-310-Opencore`
+- 如果使用`除了`CN-OVW3T3型号外的dw1820a网卡，请参考https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html
+- 如果使用dw1560/dw1830网卡，请参考https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html
+- 如果使用intel的无线网卡，请参考https://github.com/OpenIntelWireless/itlwm
